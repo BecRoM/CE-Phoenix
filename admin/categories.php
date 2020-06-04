@@ -699,11 +699,15 @@ function updateNet() {
                       </small>
                     </div>
                   </div>
+
+                  <?php
+                  echo $OSCOM_Hooks->call('categories', 'injectLanguageForm');
+                  ?>
+
                 </div>
               </div>
             </div>
             <?php
-            echo $OSCOM_Hooks->call('categories', 'injectLanguageForm');
           }
           ?>
         </div>
